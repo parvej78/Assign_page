@@ -20,11 +20,12 @@ body {
   margin: auto;
 }
 .container > form {
-  width: 30%;
+  width: 32%;
   border: 1px solid #dfdfdf;
   padding: 20px;
   border-radius: 5px;
   background: #fff;
+  height: 115%;
   
 }
 pre {
@@ -34,7 +35,7 @@ pre {
 }
 
 .btn {
-  width: 263px;
+  width: 300px;
   background: #9fe867 !important;
   color: rgb(245, 243, 243);
   font-size: larger;
@@ -49,7 +50,10 @@ p {
 }
 
 .hh{
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   text-decoration: underline;
   font-family: cursive;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
