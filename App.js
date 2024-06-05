@@ -55,8 +55,19 @@ function App() {
 
       <form onSubmit={handleSubmit}>
         <h1 className="hh">Sign-Up Page</h1>
-        <div className="ui divider"></div>
+
         <div className="ui form">
+
+          <div className="field">
+            <label>FirstName &nbsp;</label>
+            <input type="text" name="firstName" placeholder="Enter firstname" />
+          </div><br></br>
+
+          <div className="field">
+            <label>LastName &nbsp;</label>
+            <input type="text" name="lastName" placeholder="Enter lastname" />
+          </div><br></br>
+
           <div className="field">
             <label>Username &nbsp;</label>
             <input
@@ -68,6 +79,7 @@ function App() {
             />
           </div>
           <p>{formErrors.username}</p>
+
           <div className="fields">
             <label>Email-Id &nbsp;</label>
             <input
@@ -91,8 +103,45 @@ function App() {
             />
           </div>
           <p>{formErrors.password}</p>
+
+          <div className="field">
+            <label>PhoneNo. &nbsp;</label>
+            <input countryCode="+91" type="phone" name="phone" placeholder="Enter phoneNumber" />
+          </div><br></br>
+
+          <div className="field">
+            <label>Country &nbsp;</label>
+            <select>
+              <option>Select Country</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>Afghanistan</option>
+            </select>
+          </div><br></br>
+
+          <div className="field">
+            <label>City &nbsp;</label>
+            <select >
+              <option>Select city</option>
+              <option>Jaipur</option>
+              <option>Gangapur City</option>
+              <option>SWM</option>
+            </select>
+          </div><br></br>
+
+          <div className="field">
+            <label>PanCard No.</label>
+            <input type="phone" placeholder="Enter panCard number" />
+          </div><br></br>
+
+          <div className="field">
+            <label>AdharCard No.</label>
+            <input type="phone" placeholder="Enter adharCard number" />
+          </div><br></br>
+
           <button className="btn">Submit</button>
         </div>
+
       </form>
     </div>
   );
